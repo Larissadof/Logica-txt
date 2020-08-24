@@ -1,0 +1,5 @@
+variavel nenhuma pode começar com numero ou caractere especial
+depois de colocar uma variavel temos que definir o tipo dela se é numerico, caracter...
+inicio: onde se coloca os comandos
+ESCREVA - permissão para o programa escrever
+aspas duplas (")

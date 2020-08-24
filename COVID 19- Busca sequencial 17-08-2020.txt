@@ -1,0 +1,41 @@
+Algoritmo "COVID-19"
+
+Var
+paises:vetor[0..14] de caracter
+casos:vetor[0..14] de inteiro
+mortes:vetor[0..14] de inteiro
+contador, totaldemortes, totaldecasos, posicao:inteiro
+paisprocurado: caracter
+Inicio
+      para contador de 0 ate 14 faca
+      escreva("Digite o nome do país: ")
+      leia(paises[contador])
+      escreva("Digite o número de casos: ")
+           leia(casos[contador])
+           escreva("Digite o número de mortes: ")
+           leia(mortes[contador])
+      fimpara
+      escreval("Casos e Mortes por Covid: Países mais afetados")
+      escreval("")
+para contador de 0 ate 14 faca
+           escreval("País: ", paises[contador]," - casos: ", casos[contador], " - mortes: ", mortes[contador])
+      fimpara
+         totaldecasos<-casos[contador]
+totaldemortes<-mortes[contador]
+
+   para contador de 0 ate 14 faca
+     escreval(contador," ", paises[contador], "|", "casos",casos[contador],"|", "mortes", mortes[contador])
+fimpara
+      posicao<-0
+      escreva ("Digite o país que deseja procurar: ")
+      leia(paisprocurado)
+      enquanto (posicao<=10) e (paises[posicao]<> paisprocurado) faca
+      posicao <- posicao+1
+      fimenquanto
+se paisprocurado=paises[posicao] entao
+escreva("País encontrado! Número de casos é: ", casos[posicao], "Número de mortes: ", mortes[posicao])
+senao
+escreva ("Nome não foi encontrado!")
+
+
+Fimalgoritmo

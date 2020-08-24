@@ -1,0 +1,18 @@
+estrutura de decisão: se
+sintaxe:
+se teste-lógico então
+   o que vou fazer se teste lógicio for verdadeiro: senao
+   p que vou fazer se teste lógico for falso: fimse
+se media >= (maior ou igual) 7 entao
+   escreval "Você foi aprovado!!!"
+senao
+   escreval "Você foi reprovado!!!"
+fimse
+
+indentação (são os espaços) são importantes para organização
+
+javascript
+if media >=7
+   alert ("Você foi aprovado")
+else
+   alert ("Você foi reprovado")

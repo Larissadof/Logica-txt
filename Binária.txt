@@ -1,0 +1,50 @@
+algoritmo "busca binária - método bolha"
+
+var
+numeros: vetor[1..5] de inteiro
+posicao, posteste, aux: inteiro
+numeroprocurado: inteiro
+posinicial, posmeio, posfinal: inteiro
+achou: logico
+//método bolha
+inicio
+para posicao de 1 ate 5 faca
+     escreva ("Digite um número: ")
+     leia(numeros[posicao])
+fimpara
+
+
+para posicao de 1 ate 4 faca
+     para posteste de posicao+1 ate 5 faca
+          se numeros[posicao]>numeros[posteste] entao
+          aux<-numeros[posteste]
+          numeros[posteste]<- numeros[posicao]
+          numeros[posicao]<- aux
+          fimse
+     fimpara
+fimpara
+       escreva("Digite o número procurado: ")
+       leia(numeroprocurado)
+
+
+       posinicial<- posicao
+     posfinal<-5
+enquanto (NAO achou) e (posfinal>=posinicial) faca
+     //   \ É A PARTE INTEIRA DA DIVISÃO
+     //   / DIVISÃO NORMAL
+     posmeio<- (posinicial+posfinal)\2
+se numeros[posmeio]=numeroprocurado entao
+   achou<- VERDADEIRO
+fimse
+     se numeroprocurado > numeros[posmeio] entao
+        posinicial<-posmeio+1
+     senao
+          posfinal <-posmeio-1
+     fimse
+fimenquanto
+           se achou=VERDADEIRO entao
+ escreva("Encontrei o número na posição: ",posmeio)
+           senao
+ escreva ("Número não encontrado!")
+           fimse
+fimalgoritmo

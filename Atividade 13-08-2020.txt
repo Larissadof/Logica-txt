@@ -1,0 +1,393 @@
+Atividade 1 ===================
+
+var
+area, raio: real
+
+inicio
+escreva ("Digite o raio: ")
+leia(raio)
+escreval()
+area <- 3.14159 * raio * raio
+escreva ("area= ", area)
+
+
+fimalgoritmo
+
+
+
+Atividade 2 ===================
+
+var
+area, base, altura: real
+
+
+inicio
+escreva ("Digite a base:")
+leia(base)
+escreval()
+escreva("Digite a altura:")
+leia(altura)
+escreval()
+area <- base * altura/2
+escreva ("area= ", area)
+
+
+
+fimalgoritmo
+
+
+
+Atividade 3 ===================
+
+
+Var
+num1, num2: inteiro
+resultado: real
+
+
+Inicio
+  ESCREVAL ("digite o primeiro numero")
+  LEIA (num1)
+  ESCREVAL ("digiteo segundo numero")
+  LEIA (num2)
+  ESCREVA("")
+  resultado <- num1+num2
+  ESCREVAL ("valor calculado é", resultado
+
+Fimalgoritmo
+
+
+
+Atividade 4 ===================
+
+
+var
+   HT, VH, PD, SL, SB, TD: real
+
+inicio
+   escreva("informe as horas trabalhadas no mês: ")
+    leia(HT)
+   escreval()
+   escreva ("informe o valor da hora trabalhada: ")
+    leia(VH)
+   escreval()
+   escreva ("informe o percentual de desconto: ")
+    leia(PD)
+   SB <- HT * VH
+   TD <- (PD/100) * SB
+   SL <- SB - TD
+   escreval()
+   escreval()
+    escreva ("Horas trabalhadas = ", HT)
+   escreval()
+    escreva ("Salário bruto = ", SB)
+   escreval()
+    escreva ("Desconto = ", PD, "%")
+   escreval()
+    escreva ("Salário líquido = ", SL)
+
+
+
+
+fimalgoritmo
+
+
+
+Atividade 5 ===================
+
+Var
+
+C, F:real
+
+Inicio
+
+ escreva("Digite a Temperatura: ")
+ leia(C)
+ F<- (9 * C + 160) / 5
+ escreval ("A tempratura e", F, " F")
+
+Fimalgoritmo
+
+
+
+Atividade 6 ===================
+
+var
+Fah,Cel: real
+
+inicio
+escreva ("Quantos graus Fahrenheit? ")
+leia (Fah)
+cel <- (fah-32)*(5/9)
+escreva (cel:4:1,"°")
+
+fimalgoritmo
+
+
+
+Atividade 7 ===================
+
+var
+raio, altura, volume: real
+
+inicio
+escreva("Sabendo que, o raio de uma lata de óleo é de 4cm e a altura 22cm")
+escreval()
+escreva("Informe o raio = ")
+leia(raio)
+escreval()
+escreva ("Informe a altura = ")
+leia(altura)
+escreval()
+volume <- 3.14159 * raio * raio * altura
+escreva ("O volume da lata de óleo é = ", volume)
+
+fimalgoritmo
+
+
+
+Atividade 8 =================== 
+Var
+
+   sorvet1,sorvet2,sorvet3: caracter
+   total: real
+   tipodesorvete : inteiro
+   quant: inteiro
+
+Inicio
+   ESCREVAL("QUAL O TIPO DE PICOLÉ VENDIDO?")
+   ESCREVAL("DIGITE 1 PARA SOVERTE DE CHOCOLATE")
+   ESCREVAL("DIGITE 2 PARA SORVETE DE MORANGO")
+   ESCREVAL("DIGITE 3 PARA SORVETE DE BAUNILHA")
+   LEIA(tipodesorvete)
+   ESCREVAL (" escolha a quantidade")
+   LEIA (quant)
+   SE tipodesorvete = 1 entao
+      total <- quant * 0.50
+   SENAO
+      SE tipodesorvete = 2 entao
+         total <- quant * 0.60
+      SENAO
+         SE tipodesorvete = 3 entao
+            total <- quant * 0.75
+
+         FIMSE
+      FIMSE
+   FIMSE
+   ESCREVAL ("VALOR R$",total)
+
+Fimalgoritmo
+
+
+
+Atividade 9 ===================
+
+var
+diaria, valorHotel:real
+dias:inteiro
+
+inicio
+
+escreva ("Digite quantos dia voce ira ficar Hospedado(a): ")
+leia (dias)
+
+se dias > 15 entao
+   valorHotel<- 60 * dias + dias * 5.5
+senao
+se dias = 15 entao
+   valorHotel<- 60 * dias + dias * 6
+senao
+   valorHotel<- 60 * dias + dias * 8
+   fimse
+fimse
+
+escreval ("O valor total a ser pago e de: " , valorHotel, " R$")
+
+
+Fimalgoritmo
+
+
+
+Atividade 10 ===================
+
+var
+C1,C2,C3,C4,C5: INTEIRO
+Q: INTEIRO
+PRECO: REAL
+CODIGO: CARACTERE
+
+inicio
+C1 <- 1001
+C2 <- 1324
+C3 <- 6548
+C4 <- 0987
+C5 <- 7623
+ESCREVA ("Qual o codigo?")
+leia (CODIGO)
+escreva ("Qual a quantidade?")
+leia (Q)
+ ESCOLHA CODIGO
+ CASO "1001"
+ PRECO<- Q*5.32
+ CASO "1324"
+ PRECO<- Q*6.45
+ CASO "6548"
+ PRECO<- Q*2.37
+ CASO "0987"
+ PRECO<- Q*5.32
+ CASO "7623"
+ PRECO<- Q*6.45
+ FIMESCOLHA
+ ESCREVAL (PRECO,"R$")
+
+Fimalgoritmo
+
+
+
+Atividade 11 ===================
+
+var
+contador: inteiro
+
+inicio
+para contador de 7 ate 1000 passo 7 faca
+     escreval(contador)
+     fimpara
+
+fimalgoritmo
+
+
+
+Atividade 12 ===================
+
+var
+numero, sucessor, antecessor: inteiro
+
+inicio
+  escreva ("Informe um número: ")
+  leia (numero)
+  sucessor <- numero+1
+  antecessor <- numero-1
+  escreva(antecessor," <",numero," >",sucessor)
+fimalgoritmo
+
+
+
+Atividade 13 ===================
+
+var
+contador, i: inteiro
+
+inicio
+para contador de 1 ate 10 passo 1 faca
+     escreva("Digite o número: ")
+     leia(contador)
+     fimpara
+     escreva("A ordem fica =")
+para contador de 1 ate 10 faca
+escreva (contador)
+fimpara
+
+fimalgoritmo
+
+
+
+Atividade 14 ===================
+
+Var
+numeros: vetor [1..10] de inteiro
+i: inteiro
+
+Inicio
+  para i de  1 ate 10 faca
+  ESCREVAL ("Escreva um numero")
+  LEIA (numeros[i])
+  FIMPARA
+  ESCREVA ("numeros na ordem inversa: ")
+  para i de 10 ate 1 passo -1 faca
+  ESCREVA (numeros[i])
+  FIMPARA
+
+Fimalgoritmo
+
+
+
+Atividade 15 ===================
+
+var
+
+   vet: vetor[1..15] de inteiro
+   i: inteiro
+
+inicio
+
+   para i de 1 ate 15 faca
+    escreva("Informe o ", i, "numero do vetor: ")
+    leia(vet[i])
+     fimpara
+     escreval("Números positivos:")
+      para i de 1 ate 15 faca
+      se (vet[i] > 0) entao
+       escreval(vet [i] )
+         fimse
+          fimpara
+fimalgoritmo
+
+
+
+Atividade 16 ===================
+
+var
+num: vetor [1..15] de inteiro
+contador: inteiro
+
+inicio
+para contador de 1 ate 15 faca
+escreva ("Digite um numero: ")
+leia (num[contador])
+fimpara
+para contador de 1 ate 15 faca
+se (num[contador]) > 0 então
+escreva (num[contador])
+fimse
+fimpara
+
+
+fimalgoritmo
+
+
+
+Atividade 17 ===================
+
+
+var
+contador, impar, par, maior, menor: inteiro
+
+inicio
+para contador de 1 ate 20 faca
+se contador mod 2=0 entao
+escreva(contador,"=par")
+escreval()
+senao
+escreval()
+se contador <> entao
+escreva(contador,"=impar |")
+fimse
+fimse
+fimpara
+escreval()
+escreval()
+escreval("números menores que 7")
+para contador de 1 ate 20 faca
+se contador >= 50 entao
+escreva(contador)
+senao
+se contador <7 entao
+escreva(contador,"<7")
+fimse
+fimse
+fimpara
+
+
+
+fimalgoritmo

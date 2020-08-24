@@ -1,0 +1,333 @@
+EXERCÍCIO 1-
+Var
+NOME, SOBRENOME, C: CARACTER
+
+
+
+Inicio
+ESCREVA ("DIGITE SEU NOME: ")
+LEIA (NOME)
+ESCREVAL(----------------------------------------)
+ESCREVA ("DIGITE SEU SOBRENOME: ")
+LEIA (SOBRENOME)
+ESCREVAL (---------------------------------------)
+C <- (NOME + SOBRENOME)
+ESCREVAL ("SEU NOME COMPLETO É: ", C)
+
+Fimalgoritmo
+
+
+EXERCÍCIO 2-
+Var
+A, B, C, MAIOR, MENOR: INTEIRO
+
+
+Inicio
+ESCREVA ("INSIRA UM VALOR:")
+LEIA (A)
+ESCREVA ("INSIRA UM VALOR:")
+LEIA (B)
+ESCREVA ("INSIRA UM VALOR:")
+LEIA (C)
+SE (A>=B)E(B>=C)ENTAO
+   MAIOR<-A
+   MENOR<-C
+   SENAO
+   SE(A>=C)E(C>=B)ENTAO
+           MAIOR<-A
+           MENOR<-B
+   SENAO
+   SE(B>=A)E(A>=C)ENTAO
+           MAIOR<-B
+           MENOR<-C
+           SENAO
+           SE(B>=C)E(C>=A)ENTAO
+                   MAIOR<-B
+                   MENOR<-A
+                   SENAO
+                   SE(C>=A)E(A>=B)ENTAO
+                           MAIOR<-C
+                           MENOR<-B
+                           SENAO
+                           MAIOR<-C
+                           MENOR<-A
+                    FIMSE
+             FIMSE
+      FIMSE
+      FIMSE
+FIMSE
+ESCREVA("MAIOR:",MAIOR)
+ESCREVAL()
+ESCREVA ("MENOR:",MENOR)
+Fimalgoritmo
+
+
+EXERCÍCIO 3-
+Var
+A, B: CARACTER
+C, D: REAL
+
+
+Inicio
+ESCREVA ("INSIRA O NOME")
+ESCREVAL()
+LEIA (A)
+ESCREVAL()
+ESCREVA ("INSIRA SUA ALTURA")
+ESCREVAL()
+LEIA (C)
+ESCREVAL()
+ESCREVA ("INSIRA O NOME")
+ESCREVAL ()
+LEIA (B)
+ESCREVAL ()
+ESCREVA ("INSIRA SUA ALTURA")
+ESCREVAL ()
+LEIA (D)
+SE (C>D)ENTAO
+   ESCREVA (A," É MAIOR!")
+SENAO
+      SE (D>C)ENTAO
+      ESCREVA (B," É MAIOR!")
+      FIMSE
+      FIMSE
+
+Fimalgoritmo
+
+
+EXERCÍCIO 4-
+Var
+   A, B: CARACTER
+   DATA1, DATA2: INTEIRO
+   IDADE1, IDADE2: INTEIRO
+   NOVA: CARACTER
+Inicio
+   ESCREVA ("INSIRA O NOME DA PRIMEIRA PESSOA:")
+   LEIA(A)
+   ESCREVAL ()
+   ESCREVA ("INSIRA O ANO DE NASCIMENTO DA PRIMEIRA PESSOA:")
+   LEIA (DATA1)
+   ESCREVAL ()
+   ESCREVA ("INSIRA O NOME DA SEGUNDA PESSOA:")
+   LEIA(B)
+   ESCREVAL ()
+   ESCREVA ("INSIRA O ANO DE NASCIMENTO DA SEGUNDA PESSOA:")
+   LEIA(DATA2)
+      ESCREVAL ()
+      IDADE1 <- (2020-DATA1)
+      ESCREVAL ()
+      ESCREVA ("A IDADE DA PRIMEIRA PESSOA É: ",IDADE1)
+      ESCREVAL ()
+      IDADE2 <- (2020-DATA2)
+      ESCREVAL ()
+      ESCREVA ("A IDADE DA SEGUNDA PESSOA É: ",IDADE2)
+      ESCREVAL ()
+            SE (IDADE1<IDADE2)ENTAO
+            ESCREVA(A," É O MAIS NOVO(A)!")
+      SENAO
+           SE (IDADE2<IDADE1)ENTAO
+           ESCREVA(B," É O MAIS NOVO(A)!")
+      FIMSE
+      FIMSE
+
+Fimalgoritmo
+
+
+EXERCÍCIO 5-
+Var
+A: INTEIRO
+
+
+Inicio
+ESCREVA ("DIGITE UM NUMERO: ")
+LEIA(A)
+ESCREVAL ()
+   SE A MOD 2=0 ENTAO
+      ESCREVA ("O NUMERO", A, " É PAR")
+   SENAO
+      ESCREVA ("O NUMERO", A, " É IMPAR")
+   FIMSE
+
+
+EXERCÍCIO 6-
+var
+KM, M, SP_RJ: REAL
+T, TM: REAL
+
+inicio
+SP_RJ <- 430
+ESCREVAL ("A QUANTOS KM/H VOCÊ IRÁ VIAJAR?: ")
+LEIA (KM)
+M <- KM/3.6
+ESCREVAL (KM, "KM CORRESPONDE A: ",M:4:2,"M/S")
+T <- SP_RJ / KM
+TM <- T ' 60
+ESCREVAL ("E VOCÊ LEVARA APROXIMADAMENTE ",T:4:2," HORAS PARA IR DE SP À RJ")
+
+fimalgoritmo
+
+
+EXERCÍCIO 7-
+Var
+A: INTEIRO
+
+
+Inicio
+ESCREVA ("DIGITE SUA TEMPERATURA:")
+LEIA (A)
+ESCREVAL ()
+   SE (A>=25)ENTAO
+     ESCREVA("ESTÁ MUITO QUENTE!")
+SENAO
+   SE (A<=25)ENTAO
+     ESCREVA("ESTÁ AGRADÁVEL!")
+   FIMSE
+   FIMSE
+
+
+
+Fimalgoritmo
+
+
+EXERCÍCIO 8-
+Var
+NOME: CARACTER
+IDADE: INTEIRO
+RESULTADO: INTEIRO
+SEXO: CARACTER
+Inicio
+ESCREVA ("DIGITE SEU NOME: ")
+LEIA(NOME)
+ESCREVA ("SEXO F OU M?")
+LEIA(SEXO)
+ESCREVAL()
+ESCREVA ("DIGITE SUA IDADE: ")
+LEIA(IDADE)
+ESCREVAL()
+ESCREVAL()
+ESCOLHA SEXO
+        CASO "F"
+        RESULTADO <- (60-IDADE)
+                  CASO ("M")
+                  RESULTADO <- (65-IDADE)
+        OUTROCASO
+        ESCREVA ("COMANDO INVÁLIDO")
+                            FIMESCOLHA
+ESCREVAL()
+   SE (IDADE>=18)ENTAO
+       ESCREVA ("VOCÊ É MAIOR DE IDADE!")
+   SE (IDADE<18)ENTAO
+       ESCREVA ("VOCÊ AINDA É MUITO NOVO!")
+FIMSE
+FIMSE
+ESCREVAL()
+ESCREVAL()
+       ESCREVA ("FALTAM APENAS", RESULTADO, " ANOS PARA VOCÊ SE APOSENTAR!")
+
+
+Fimalgoritmo
+
+
+EXERCÍCIO 9-
+Var
+ numConta: inteiro
+ operacao: caracter
+ saldo, valor, retirar, depositar:real
+ null:inteiro
+Inicio
+escreva ("Digite o Numero da Conta:" )
+leia(numConta)
+escreva ("Digite o seu Saldo:" )
+leia(saldo)
+escreva ("Digite o tipo de Operacao Desejada (DEPOSITO ou RETIRADA):" )
+leia(operacao)
+escreva()
+escreva ("Digite o valor que o senhor(a) deseja depositar")
+leia(depositar)
+escreval("================================================")
+escreval ()
+escreval ("================================================")
+escreval ()
+escreva ("Digite o valor que o senhor(a) deseja retirar")
+leia(retirar)
+escreval()
+
+
+     se saldo>=100 entao
+             escreva ("Seu saldo e Positivo")
+senao
+     se saldo<=100 entao
+             escreva ("Seu saldo e Negativo")
+
+     fimse
+     fimse
+Fimalgoritmo
+
+
+EXERCÍCIO 10-
+var
+NumA, NumB: real
+
+inicio
+escreva ( "Informe um numero: " )
+leia (NumA)
+escreva ( "Informe um numero: " )
+leia (NumB)
+escreva (NumB," e ", NumA)
+
+Fimalgoritmo
+
+
+EXERCÍCIO 11-
+Var
+PROVA1, PROVA2, PROVA3: REAL
+RESULTADO: REAL
+
+
+Inicio
+ESCREVA ("DIGITE A NOTA DA PROVA 1: ")
+LEIA (PROVA1)
+ESCREVAL()
+ESCREVA ("DIGITE A NOTA DA PROVA 2: ")
+LEIA (PROVA2)
+ESCREVAL()
+ESCREVA ("DIGITE A NOTA DA PROVA 3: ")
+LEIA (PROVA3)
+ESCREVAL()
+   SE (PROVA1<=2)ENTAO
+SENAO
+   SE (PROVA2<=3)ENTAO
+SENAO
+   SE (PROVA3<=5)ENTAO
+FIMSE
+FIMSE
+FIMSE
+ESCREVA("==================================================")
+ESCREVAL()
+     RESULTADO <- (PROVA1+PROVA2+PROVA3)
+     ESCREVA ("PARABENS SUA NOTA É", RESULTADO)
+
+
+Fimalgoritmo
+
+
+EXERCÍCIO 12 -
+Var
+NOME: CARACTER
+IDADE: INTEIRO
+RESULTADO: INTEIRO
+
+
+Inicio
+ESCREVA ("DIGITE SEU NOME: ")
+LEIA (NOME)
+ESCREVAL()
+ESCREVA ("DIGITE SUA IDADE: ")
+LEIA (IDADE)
+ESCREVAL ()
+         RESULTADO <- (IDADE*365)
+   ESCREVA ("VOCÊ JÁ VIVEU", RESULTADO, " DIAS")
+
+
+Fimalgoritmo
+

@@ -1,0 +1,26 @@
+Vamos testar a estrtura de repetição: 
+para - fimpara
+sintaxe:
+para variavel=valorinicial ate valorfinal
+(passo valorpasso) faca
+comando
+fimpara
+para (variavel) de (valorinicial) ate 
+(valorfinal) passo 1
+(passo é só necessario se for fazer uma
+sequencia. ex: 2,4,6...)
+	escreval ("exemplo")
+fimpara
+
+enquanto - fimenquanto // lembrar que
+inicializa com 0
+(variavel) <-1
+enquanto (variavel)<=10 faca
+	escreval ("exemplo")
+	(variavel)<-(variavel)+1
+fimenquanto
+
+expressão lógica - retorna verdadeiro ou
+falso
+ultiliza operadores relacionais: = > < <= <>
+

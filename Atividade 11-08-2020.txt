@@ -1,0 +1,109 @@
+ATIVIDADE 1 -
+var
+A: INTEIRO
+
+
+Inicio
+ESCREVA ("DIGITE UM NUMERO: ")
+LEIA(A)
+ESCREVAL ()
+   SE A % 2=0 ENTAO
+      ESCREVA ("O NUMERO", A, " É PAR")
+   SENAO
+      ESCREVA ("O NUMERO", A, " É IMPAR")
+   FIMSE
+
+fimalgoritmo
+
+
+Ativadade 4 -
+Var
+   Valor_fixo, valor_vendas: real
+   funcionario: caractere
+
+Inicio
+   Escreva ("Nome do Funcionário: ")
+   leia (funcionario)
+   Escreva ("Qual é a meta fixa? ")
+   Leia(Valor_fixo)
+   Escreva ("Qual valor de vendas? ")
+   leia (valor_vendas)
+
+   Se (valor_vendas < Valor_fixo)entao
+      escreva ("Não Ganhou! ")
+   senao
+      escreva ("Ganhou !")
+      fimse
+
+
+Fimalgoritmo
+
+
+Atividade 5 -
+Var
+   Num:inteiro
+
+
+Inicio
+      num <-2
+      enquanto Num <=100 faca
+       Escreva (num)
+       num <- num + 2
+       fimenquanto
+
+
+Fimalgoritmo
+
+
+Atividade 6 -
+Var
+ N1, N2 , N3, N4:real
+ MEDIA:real
+ Faltas , total:inteiro
+
+
+Inicio
+      ESCREVAL (" Informe a primeia nota :")
+      LEIA (N1)
+      ESCREVAL ("Informe a segunda nota : ")
+      LEIA (N2)
+      ESCREVAL ("Informe a terceira nota : ")
+      LEIA (N3)
+      ESCREVAL ("Informe a quarta nota : ")
+      LEIA (N4)
+      MEDIA <- (N1 +N2 +N3+N4) /4
+      SE (MEDIA >=7) ENTAO
+      ESCREVAL ("O aluno está aprovado")
+      SENAO
+      SE (MEDIA >=5) ENTAO
+      ESCREVAL ("O aluno está em recuperação")
+      SENAO
+      ESCREVA ("O aluno está reprovado")
+      FIMSE
+      FIMSE
+
+       Escreval ("Informe suas faltas : ")
+       Leia (Faltas)
+       SE (Faltas >=10) ENTAO
+       Escreva ("O aluno está reprovado. ")
+       Senao
+       Escreva ("O aluno está com as faltas em dia ")
+       fimse
+
+
+Fimalgoritmo
+
+
+Atividade 7 -
+var
+N1: inteiro
+
+
+inicio
+para N1 de 1 ate 20 passo 1 faca
+     escreval("1/",N1)
+fimpara
+
+
+
+fimalgoritmo

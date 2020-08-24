@@ -1,0 +1,35 @@
+paises - caracter
+
+vetor - trabalhar com estrutura de repetição - para
+casos - inteiro
+mortes - inteiro
+
+declaração
+
+
+
+var
+
+paises: vetor[0..14] de caracter
+
+casos: vetor[0..14] de inteiro
+mortes: vetor[0..14] de inteiro
+
+contador: inteiro
+
+
+inicio
+para contador de 0 ate 14 faca
+	escreva ("digite o nome do pais:")
+	leia(paises[contador])
+	escreva("digite o numero de casos:")
+	leia (casos[contador]
+	escreva("digite o numero de mortes:")
+	leia(mortes[contador])
+fimpara
+//imprimindo o relatório
+escreval ("numero de casos e mortes do covid-19 por pais")
+escreval()
+para contador de 0 ate 14 faca
+	escreval(paises[contador], "casos:, casos[contador],Mortes, mortes[contador])
+fimpara

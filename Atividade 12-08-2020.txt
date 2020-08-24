@@ -1,0 +1,133 @@
+Atividade - 1
+
+
+Var
+   i:inteiro
+   vet1:vetor[0..4] de inteiro
+   vet2:vetor[0..4] de inteiro
+
+Inicio
+   para i de 0 ate 4 faca
+      ESCREVAL ("Insira o valor para ser repetido")
+      LEIA (vet1[i])
+   FIMPARA
+   para i de 0 ate 4 faca
+      vet2[i] <- vet1[i]
+   FIMPARA
+   ESCREVAL ("VETOR A")
+   ESCREVAL()
+   para i de 0 ate 4 faca
+      ESCREVAL (vet1[i])
+   FIMPARA
+
+   ESCREVAL()
+   ESCREVAL ("Vetor B")
+   ESCREVAL ()
+   para i de 0 ate 4 faca
+      ESCREVAL (vet2[i])
+   FIMPARA
+   
+Fimalgoritmo
+
+
+Atividade - 2
+
+
+var
+vet1: vetor[1..10] de inteiro
+vet2: vetor[1..10] de inteiro
+vet3: vetor[1..10] de inteiro
+contador: inteiro
+
+inicio
+para contador de 1 ate 10 faca
+     escreva ("Digite o 1º valor: ")
+     leia (vet1[contador])
+     escreva ("Digite o 2º valor: ")
+     leia (vet2[contador])
+fimpara
+       para contador de 1 ate 10 faca
+       vet3[contador] <- vet1[contador]+vet2[contador]
+       fimpara
+       
+               para contador de 1 ate 10 faca
+               escreval ("Soma dos vetores: ", vet1[contador], " +", vet2[contador]," =", vet3[contador])
+               fimpara
+
+
+
+
+
+
+
+fimalgoritmo
+
+
+Atividade - 3
+
+
+var
+vet1: vetor[1..5] de caracter
+vet2: vetor[1..5]  de caracter
+vet3: vetor[1..10] de caracter
+contador: inteiro
+
+
+inicio
+para contador de 1 ate 5 faça
+escreval()
+          escreval("Fruta: ")
+          leia (vet1[contador])
+          escreval()
+
+                    escreval("Legume: ")
+                    leia (vet2[contador])
+                    escreval()
+se vet1[contador] <> vet2[contador] entao
+vet3[contador] <- vet1[contador]
+vet3[contador + 5] <- vet2[contador]
+              senao
+vet3[contador] <- vet1[contador]
+               fimse
+                    fimpara
+                           escreval ("Frutas e Legumes")
+                           para contador de 1 ate 10 faca
+                           escreval ("Fruta ou legumes: ", vet3[contador])
+                           fimpara
+
+
+fimalgoritmo
+
+
+Atividade - 4
+
+
+var
+mortes, casos, divisao, porcentagem: vetor[1..15] de real
+pais: vetor[1..15] de caracter
+contador: inteiro
+
+inicio
+      para contador de 1 ate 15 faca
+           escreva ("Nome do pais: ")
+                   leia(pais[contador])
+           escreval ("======================================================")
+           escreva ("Numero de mortos: ")
+                   leia(mortes[contador])
+           escreval ("======================================================")
+           escreva ("Número de casos: ")
+                   leia(casos[contador])
+           escreval ("======================================================")
+
+                   divisao[contador] <- mortes[contador]/casos[contador]
+                   porcentagem[contador] <- divisao[contador]*100
+
+                   para contador de 1 ate 15 faca
+                        escreval ("País: ",pais[contador]," - Mortes: ", mortes[contador]," - Casos: ", casos[contador])
+                        escreval ("======================================================")
+                        escreval ("Porcentagem de mortes/casos: ", porcentagem[contador],"%")
+fimpara
+fimpara
+
+
+fimalgoritmo
